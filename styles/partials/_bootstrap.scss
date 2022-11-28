@@ -1,0 +1,33 @@
+.card {
+    font-family: $font-text;
+    font-size: small;
+    color: map-get($text-colors, text-primary);
+    .card-title {
+        font-weight: bold;
+    }
+}
+.simulation-form {
+    width: 60%;
+    padding-top: 20px;
+    .form-label,
+    .form-control,
+    .form-select {
+        font-family: $font-text;
+        color: map-get($text-colors, text-dark);
+        font-size: small;
+    }
+    .form-label, .btn {
+        color: map-get($text-colors, text-primary);   
+    }
+    .form-text, .btn {
+        font-family: $font-text;
+        font-size: small;
+    }
+    .btn {
+        width: 200px;
+    }
+    .form-control:focus {
+        border-color: map-get($form-colors, secondary);
+        box-shadow: none;
+    }
+}

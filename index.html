@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8eb892911b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Simulador de Crédito</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row justify-content-center">
+                <div class="header-container">
+                    <div class="header-title">
+                        <h1>....:::: Financredi ::::....</h1>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row justify-content-center">
+                <div class="main-container">
+                    <div class="main-title">
+                        <h1>Formulario de Simulación de Créditos</h1>
+                        <hr>
+                    </div>
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h6 class="card-title">¿Quieres saber cuánto pagarías aproximadamente en cada cuota?</h6>
+                            <p class="card-text">
+                                Con nuestro simulador puedes calcular y conocer de forma anticipada el valor de las cuotas que deberás pagar sin haber pedido tu crédito. Sólo debes ingresar los datos solicitados 
+                                en el formulario y estarás a un paso más cerca de lo que quieres comprar!.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-simulation">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <form id="simulation-form" class="simulation-form">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">* Nombre(s) y Apellido(s):</label>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Nombre(s) y Apellido(s)">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="monto" class="form-label">* ¿Cuanto dinero necesitas?:</label>
+                                    <input type="number" id="monto" class="form-control" placeholder="Monto del crédito a simular">
+                                </div>    
+                                <div class="mb-3">
+                                    <label for="plazo" class="form-label">* ¿En cuantos meses deseas pagar el prestamo?:</label>
+                                    <select id="plazo" class="form-control form-select">
+                                        <option value="12">12</option>
+                                        <option value="24">24</option>
+                                        <option value="36">36</option>
+                                        <option value="48">48</option>
+                                        <option value="60">60</option>
+                                    </select>
+                                </div>   
+                                <div class="mb-3">
+                                    <div class="form-text">* Campos obligatorios</div>
+                                </div>
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-warning">Simular Crédito</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div id="card-result" class="hidden">
+                                <div class="card-body">
+                                    <h6 class="card-title" id="titleResult"></h6>
+                                    <p>A continuación te presentamos el resultado de la simulación:</p>
+                                    <div class="card-result-detail">
+                                        <div class="mb-3">
+                                            <label class="form-label"><b>Tasa aplicada: </b></label>
+                                            <label class="form-label" id="rate"></label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><b>Valor del prestamo: </b></label>
+                                            <label class="form-label" id="amount"></label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><b>Plazo del prestamo: </b></label>
+                                            <label class="form-label" id="term"></label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><b>Valor de la cuota mensual: </b></label>
+                                            <label class="form-label" id="totalPayPerMonth"></label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><b>Valor total a pagar: </b></label>
+                                            <label class="form-label" id="totalPay"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row justify-content-center">
+                <div class="footer-container">
+                    <div class="footer-container-left">
+                        <h1 class="footer-title fs-6">Contáctate con nosotros</h1>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="footer-link" href="#" target="_blank">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        Línea gratuita nacional: 01 8000 000 000
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-container-middle">
+                        <h1 class="footer-title fs-6">Redes sociales:</h1>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="footer-link" href="https://www.facebook.com" target="_blank">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </a>
+                                    <a class="footer-link" href="https://www.twitter.com" target="_blank">
+                                        <i class="fa-brands fa-square-twitter"></i>
+                                    </a>
+                                    <a class="footer-link" href="https://www.instagram.com" target="_blank">
+                                        <i class="fa-brands fa-square-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-container-right">
+                        <h1 class="footer-title fs-6">Escribenos:</h1>
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="footer-link" href="https://www.whatsapp.com/?lang=es" target="_blank">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        Habla con nosotros por WhatsApp
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>

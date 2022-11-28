@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Montserrat&display=swap");
+.card {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  color: #363535;
+}
+.card .card-title {
+  font-weight: bold;
+}
+
+.simulation-form {
+  width: 60%;
+  padding-top: 20px;
+}
+.simulation-form .form-label,
+.simulation-form .form-control,
+.simulation-form .form-select {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: small;
+}
+.simulation-form .form-label, .simulation-form .btn {
+  color: #363535;
+}
+.simulation-form .form-text, .simulation-form .btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+}
+.simulation-form .btn {
+  width: 200px;
+}
+.simulation-form .form-control:focus {
+  border-color: #D4AC0D;
+  box-shadow: none;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 98%;
+  height: 150px;
+}
+.header-container .header-title {
+  font-family: "Cormorant", serif;
+  color: #E5E8E8;
+  padding: 5px;
+}
+.header-container .fa-solid {
+  color: #E5E8E8;
+  font-size: 4rem;
+}
+
+body {
+  background-color: #E5E8E8;
+}
+
+.main-container {
+  width: 95%;
+}
+.main-container .main-title {
+  font-family: "Cormorant", serif;
+  color: #D4AC0D;
+  padding: 10px;
+}
+.main-container .container-simulation {
+  display: flex;
+  align-items: center;
+}
+.main-container .container-simulation .card-result .card-result-detail {
+  padding-top: 20px;
+}
+.main-container .hidden {
+  display: none;
+}
+
+footer {
+  background-color: #333333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 25px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 0px;
+  width: 95%;
+}
+.footer-container .footer-container-left {
+  padding: 10px;
+}
+.footer-container .footer-container-left .footer-title {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-left .fa-solid {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-left .fa-solid:hover {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-left .fa-phone-volume {
+  font-size: 2.5rem;
+}
+.footer-container .footer-container-left .footer-link {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-left .footer-link:hover {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-middle {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer-container .footer-container-middle .footer-title {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-middle .fa-brands {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-middle .fa-brands:hover {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-middle .fa-square-facebook,
+.footer-container .footer-container-middle .fa-square-instagram,
+.footer-container .footer-container-middle .fa-square-twitter {
+  font-size: 3rem;
+}
+.footer-container .footer-container-middle .footer-link {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-middle .footer-link:hover {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-right {
+  padding: 10px;
+}
+.footer-container .footer-container-right .footer-title {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-right .fa-brands {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-right .fa-brands:hover {
+  color: #D4AC0D;
+}
+.footer-container .footer-container-right .fa-whatsapp {
+  font-size: 3rem;
+}
+.footer-container .footer-container-right .footer-link {
+  color: #E5E8E8;
+  text-decoration: none;
+  transition: all;
+}
+.footer-container .footer-container-right .footer-link:hover {
+  color: #D4AC0D;
+}/*# sourceMappingURL=styles.css.map */

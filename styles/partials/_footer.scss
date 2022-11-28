@@ -1,0 +1,96 @@
+footer {
+    background-color: map-get($background-colors, background-secondary);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 25px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: map-get($background-colors, background-dark);
+    font-family: $font-text;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    width: 95%;
+    .footer-container-left {
+        padding: 10px;
+        .footer-title{
+            color: map-get($text-colors, text-secondary);
+        }
+        .fa-solid {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+        .fa-phone-volume {
+            font-size:2.5rem;
+        }
+        .footer-link {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+    }
+    .footer-container-middle {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .footer-title{
+            color: map-get($text-colors, text-secondary);
+        }
+        .fa-brands {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+        .fa-square-facebook,
+        .fa-square-instagram,
+        .fa-square-twitter {
+            font-size:3rem;
+        }
+        .footer-link {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+    }
+    .footer-container-right {
+        padding: 10px;
+        .footer-title{
+            color: map-get($text-colors, text-secondary);
+        }
+        .fa-brands {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+        .fa-whatsapp {
+            font-size:3rem;
+        }
+        .footer-link {
+            color: map-get($text-colors, text-alternative);
+            text-decoration: none;
+            transition: all;
+            &:hover {
+                color: map-get($text-colors, text-secondary);
+            }
+        }
+    }
+}

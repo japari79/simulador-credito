@@ -1,0 +1,20 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($background-colors, background-secondary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 98%;
+    height: 150px;
+    .header-title {
+        font-family: $font-title;
+        color: map-get($text-colors, text-alternative);
+        padding: 5px;
+    }
+    .fa-solid {
+        color: map-get($text-colors, text-alternative);
+        font-size:4rem;
+    }
+}

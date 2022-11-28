@@ -1,0 +1,25 @@
+body {
+    background-color: map-get($background-colors, background-primary);
+}
+
+.main-container {
+    width: 95%;
+    .main-title {
+        font-family: $font-title;
+        color: map-get($text-colors, text-secondary);
+        padding: 10px;
+    }
+    .container-simulation {
+        display: flex;
+        align-items: center;
+        .card-result {
+            .card-result-detail {
+                padding-top: 20px;
+            }
+            
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}
