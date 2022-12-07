@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"type": "Credito de Vehículo",
+		"rate": 1.50
+	},
+	{
+		"id": 2,
+		"type": "Credito Educativo",
+		"rate": 1.32
+	},
+	{
+		"id": 3,
+		"type": "Credito de Libre Inversión",
+		"rate": 1.64
+	}
+]

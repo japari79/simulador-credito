@@ -31,3 +31,13 @@
         box-shadow: none;
     }
 }
+.card-result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .btn {
+        color: map-get($text-colors, text-primary);   
+        font-family: $font-text;
+        font-size: small;
+        width: 200px;
+    }
+}

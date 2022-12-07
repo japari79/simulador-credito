@@ -34,6 +34,17 @@
   box-shadow: none;
 }
 
+.card-result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-result .btn {
+  color: #363535;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  width: 200px;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -73,6 +84,13 @@ body {
 }
 .main-container .container-simulation .card-result .card-result-detail {
   padding-top: 20px;
+}
+.main-container .table-result {
+  width: 80%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: small;
 }
 .main-container .hidden {
   display: none;

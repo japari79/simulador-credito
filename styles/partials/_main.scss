@@ -19,6 +19,14 @@ body {
             
         }
     }
+    .table-result {
+        width: 80%;
+        text-align: left;
+        font-family: $font-text;
+        color: map-get($text-colors, text-dark);
+        font-size: small;
+    }
+
     .hidden {
         display: none;
     }
